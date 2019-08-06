@@ -1,0 +1,74 @@
+\documentclass [11pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+
+\usepackage[british]{datetime2}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{graphicx}
+\graphicspath{{graphics/}}
+\usepackage{float}
+\usepackage{cleveref}
+%\usepackage{minted}
+%\setminted[r]{fontfamily=courier}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode} 
+
+\usepackage{booktabs}
+
+\usepackage[backend=biber, bibencoding=utf8, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+%\newcommand{\cmd}[1] {\lstinline[breaklines=true]|git -> #1|}
+\newcommand{\cmd}[1] {\lstinline[breaklines=true]|#1|}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{Assignment \thesection:}{1em}{}
+
+
+\begin{document}
+\begin{titlepage}
+		\centering
+		\includegraphics[scale = 0.4]{logo.pdf}\\[0.5 cm]
+		\textsc{\LARGE politecnico di torino}\\[4 cm]
+
+				
+		\rule{\linewidth}{0.2 mm} 
+		{ \huge Complex networks: theory and applications\\Laboratory report}
+		\rule{\linewidth}{0.2 mm} \\[4.5 cm]
+
+			\LARGE Andrea Senacheribbe\\s265392\\[4cm]
+		\Large Master in Communications and Computer Networks Engineering\\[0.7cm]
+
+		
+		\Large 4th July 2019	
+		
+\end{titlepage}
+
+\newgeometry{top=1.5in,bottom=1.5in,right=1in,left=1in}
+\section{Centrality indices}
+\input{tex/assgn1.tex}
+\pagebreak
+
+\section{Epidemic processes over the graph}
+\input{tex/assgn2.tex}
+\pagebreak
+
+\section{Erdős–Rényi model}
+\input{tex/assgn3.tex}
+\pagebreak
+
+\section{Barabási–Albert model}
+\input{tex/assgn4.tex}
+
+\newpage
+\printbibliography
+
+\end{document}
